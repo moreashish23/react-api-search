@@ -6,7 +6,8 @@
 import { createContext, useContext, useReducer, useEffect } from "react";
 import reducer from "./Reducer";
 
- let API = "http://hn.algolia.com/api/v1/search?";
+
+let API = import.meta.env.VITE_API_URL;
 
 const initialState = {
     isLoading : true,
