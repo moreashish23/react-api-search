@@ -33,7 +33,7 @@ const AppProvider = ({children}) => {
         try {
             const res = await fetch(url);
             const data = await res.json();
-             console.log(data);
+             //console.log(data);
              dispatch({
                 type: "GET_STORIES",
                 payload:{
